@@ -6,8 +6,8 @@ This is a personal project created to demonstrate my learning of UI Design.
 
 The project uses following dependencies
 
-Jquery
-BootStrap CSS
-Jquery credit card validator by PawelDecowski
+1. Jquery
+2. BootStrap CSS
+3. Jquery credit card validator by PawelDecowski
 
 To use the project, just clone the repo and open index.html in any browser.
