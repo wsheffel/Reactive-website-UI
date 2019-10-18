@@ -6,17 +6,17 @@
         <script src="../js/jquery.creditCardValidator.js"></script>
     <link rel="stylesheet" href="../css/bootstrap.min.css">
         
-    <script src="../js/billingDetails.js"></script>
+    <script src="../js/b2binfo.js"></script>
 
     </head>
-    <body style="padding-left: 25px; background-color: azure" onload="changeImage()">
+    <body style="padding-left: 25px; background-color: azure;" onload="changeImage()">
         <br/>
         <div class="d-flex justify-content-center align-items-center" >
             <h6 id = "packagedetatils" style="padding-right: 25px">Your selection :</h6>
             <img id="productimg" style="height: 200px; width: 200px;">
         </div>
         <br/>
-        <h5 id="billingHeader"> Please Input your Billing Details</h5>
+        <h5 style="color: midnightblue" id="billingHeader"> Please Input your Billing Details</h5>
         <br/>
         <div class="row" id=billingDiv>
             <div class="col-xs-7 col-sm-6 col-lg-4">
@@ -42,43 +42,6 @@
                     <h6 >Phone Number </h6> <input id="phonenumber"  type="tel" style="width: 300px"> 
                 </div>
             </div>
-            <div class="col-xs-6 col-sm-4 col-lg-3">
-                <div>
-                    <h6 >Credit Card Number  </h6> <input  type="text" style="width: 300px" id="ccnum"> 
-                </div>
-                <div id="expiration-date">
-                <h6>Expiration Date</h6>
-                <div class="row" style="padding-left: 15px">
-                <select style="width: 200px" id="month">
-                    <option value="01">January</option>
-                    <option value="02">February </option>
-                    <option value="03">March</option>
-                    <option value="04">April</option>
-                    <option value="05">May</option>
-                    <option value="06">June</option>
-                    <option value="07">July</option>
-                    <option value="08">August</option>
-                    <option value="09">September</option>
-                    <option value="10">October</option>
-                    <option value="11">November</option>
-                    <option value="12">December</option>
-                </select>
-                <select style="width: 90px" id="year">
-                    <option value="19"> 2019</option>
-                    <option value="20"> 2020</option>
-                    <option value="21"> 2021</option>
-                    <option value="22"> 2022</option>
-                    <option value="23"> 2023</option>
-                    <option value="24"> 2024</option>
-                </select>
-                    </div>
-            </div>
-                <div>
-                    <h6 >Name on the Card </h6> <input  type="text" style="width: 300px" id="fullname"> 
-                </div>
-               
-            </div>
-
         </div>
                       <br/>
 
@@ -86,7 +49,7 @@
 <!-- ------------------------------------------------------------------------------------- -->
         
                 <br/>
-        <h5 id="billingveriy" style="display: none"> Please Review your Billing Details</h5>
+        <h5 style="color: midnightblue; display: none" id="billingveriy"> Please Review your Information</h5>
         <br/>
         <div class="row" id=billingverifyDiv style="display: none">
             <div class="col-xs-7 col-sm-6 col-lg-4">
@@ -113,23 +76,15 @@
                 </div>
             </div>
             <div class="col-xs-6 col-sm-4 col-lg-3">
-                <div>
-                    <h6  type="text" style="width: 300px" id="ccnumvfy"> </h6>
-                </div>
-                <div>
-                <h6 id="expiration-datevfy"></h6>
-               
-            </div>
-                <div>
-                    <h6  type="text" style="width: 300px" id="fullnamevfy"> </h6>
-                </div>
-               
-            </div>
+               <p style="border: 1px solid; padding: 10px">
+                Thank You, for the interest in our service. Please verify and submit the details. Our sales representative will get in touch with you in next 48 hours, to formalize the details, once you submit your details with us..
+                </p>
 
+        </div>
         </div>
                       <br/>
 
-        <button style="background-color: blue; color: white; width: 250px;display: none" id="billingVerifyButton"> Place Order </button>
+        <button style="background-color: blue; color: white; width: 250px;display: none" id="billingVerifyButton"> Submit </button>
         
     </body>
 </html>
