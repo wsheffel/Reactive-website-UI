@@ -12,4 +12,4 @@ The project uses following dependencies
 
 To use the project, just clone the repo and open index.html in any browser.
 
-Disclaimer:- Images used in the project are purely for illustration, they were downloaded from Google and I do not own the copyrights to them.
+
