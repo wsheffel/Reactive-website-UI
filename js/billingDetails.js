@@ -173,13 +173,13 @@ $(document).ready(function() {
                 $("#validationccnum").removeClass("validation");    
       })
      
-     $("#month").focusout(function() {  
+     $("#month").change(function() {  
 
          var d = new Date(),
             currMonth = d.getMonth(),
             currYear = d.getFullYear();
-        
-        if(yearval <= currYear && monthval-1 < currMonth){
+        var yearVal = $('#year').val();
+        if(yearVal <= currYear && $(this).val() -1 < currMonth){
             $("#expiration-date").css('border', 'solid 2px red');  
                 $("#expiration-date").parent().after("<div id='#expiration-datevali' class='validation' style='color:red;margin-bottom: 20px;'>Expiry Date cannot be in the past</div>");
         }else { 
@@ -199,13 +199,13 @@ $(document).ready(function() {
                 $("#expiration-datevali").html('');
                 $("#expiration-datevali").removeClass("validation");    
       })
-    $("#year").focusout(function() {  
+    $("#year").change(function() {  
 
           var d = new Date(),
             currMonth = d.getMonth(),
             currYear = d.getFullYear();
-        
-        if(yearval <= currYear && monthval-1 < currMonth){
+        var monthVal = $('#month').val();
+        if($(this).val() <= currYear && monthVal-1 < currMonth){
             $("#expiration-date").css('border', 'solid 2px red');  
                 $("#expiration-date").parent().after("<div id='#expiration-datevali' class='validation' style='color:red;margin-bottom: 20px;'>Expiry Date cannot be in the past</div>");
         }else { 
@@ -304,7 +304,6 @@ $(document).ready(function() {
             var d = new Date(),
             currMonth = d.getMonth(),
             currYear = d.getFullYear();
-        console.log(currMonth, currYear);
         if(yearval <= currYear && monthval-1 < currMonth){
             $("#expiration-date").css('border', 'solid 2px red');  
                 $("#expiration-date").parent().after("<div id='expiration-datevali' class='validation' style='color:red;margin-bottom: 20px;'>Expiry Date cannot be in the past</div>");
